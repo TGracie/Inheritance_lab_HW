@@ -18,6 +18,12 @@ public abstract class Employee {
         return this.name;
     }
 
+    public void setName(){
+        if(!name.equals(null)){
+            this.name = name;
+        }
+    }
+
     public int getNI(){
         return this.NI;
     }
