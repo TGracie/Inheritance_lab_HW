@@ -33,4 +33,10 @@ public class DirectorTest {
         dir.payBonus();
         assertEquals(900.00, dir.viewBonus(), 0.1);
     }
+
+    @Test
+    public void screwTheBoss(){
+        dir.raiseSalary(-0.05);
+        assertEquals(47250.00, dir.getSalary(), 0.1);
+    }
 }
